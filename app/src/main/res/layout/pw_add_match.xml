@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    >
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+        <RelativeLayout
+            android:id="@+id/firstLinear"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/tvHomeClub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home club: "
+                >
+            </TextView>
+            <AutoCompleteTextView
+                android:id="@+id/edHomeName"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tvHomeClub"
+                android:textSize="10sp"
+                >
+            </AutoCompleteTextView>
+            <TextView
+                android:id="@+id/tvBetCoef"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home coeff: "
+                android:layout_below="@id/edHomeName">
+            </TextView>
+            <EditText
+                android:id="@+id/edBetCoef"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tvBetCoef"
+                android:layout_below="@+id/edHomeName"
+                >
+            </EditText>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/secondLinear"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/firstLinear"
+            android:layout_weight="2">
+            <TextView
+                android:id="@+id/tvHomeClubsec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Away club: "
+                >
+            </TextView>
+            <AutoCompleteTextView
+                android:id="@+id/edHomeNamesec"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tvHomeClubsec"
+                android:textSize="10sp"
+                >
+            </AutoCompleteTextView>
+            <TextView
+                android:id="@+id/tvBetCoefsec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Away coeff: "
+                android:layout_below="@id/edHomeNamesec">
+            </TextView>
+            <EditText
+                android:id="@+id/edBetCoefsec"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/tvBetCoefsec"
+                android:layout_below="@+id/edHomeNamesec"
+                >
+            </EditText>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Add"
+        android:layout_alignParentBottom="true">
+
+    </Button>
+
+</RelativeLayout>

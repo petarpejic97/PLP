@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">PremierLeaguePredictions</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    //menu
+    <string name="title_fixtures">Fixtures</string>
+    <string name="title_tables">Table</string>
+    <string name="title_comments">Comments</string>
+    <string name="title_login">Log in</string>
+    //main_activity
+    <string name="premierleague">Premier League</string>
+    <string name="predictions">predictions</string>
+
+    //fragmentLogin
+    <string name="enterEmail">Enter your email</string>
+    <string name="enterPassword">Enter your password</string>
+    <string name="login">Log in</string>
+    <string name="register">You do not have account? Click here</string>
+
+    //alreadylogged
+    <string name="helloNickname">Hello nickname, you are already logged. </string>
+    <string name="logout">Log out</string>
+
+    //fragmentComment
+    <string name="addComment">Add comment</string>
+    <string name="btnPost">POST</string>
+
+    //registration
+    <string name="enterflname">Enter your fullname</string>
+    <string name="enternickname">Enter your nickname</string>
+    <string name="enteremail">Enter your email</string>
+    <string name="enterpassword">Enter your password</string>
+    <string name="confirmpassword">Confirm your password</string>
+    <string name="btnRegistration">Registration</string>
+
+    //fragment fixtures
+    <string name="btnAddmatch">Add match</string>
+    <string name="btnBstValue">BestValue</string>
+    <string name="imgDescription">Premier League logo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

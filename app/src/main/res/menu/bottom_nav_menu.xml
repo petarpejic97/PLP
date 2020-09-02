@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_fixtures"
+        android:icon="@drawable/ic_football_field"
+        android:title="@string/title_fixtures" />
+
+    <item
+        android:id="@+id/navigation_table"
+        android:icon="@drawable/ic_trophy_shape"
+        android:title="@string/title_tables" />
+
+    <item
+        android:id="@+id/navigation_comments"
+        android:icon="@drawable/ic_comment"
+        android:title="@string/title_comments"
+        />
+    <item
+        android:id="@+id/navigation_login"
+        android:icon="@drawable/ic_user"
+        android:title="@string/title_login" />
+
+</menu>

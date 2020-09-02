@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "239339224841",
+    "firebase_url": "https://premier-leaguepredictions.firebaseio.com",
+    "project_id": "premier-leaguepredictions",
+    "storage_bucket": "premier-leaguepredictions.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:239339224841:android:1b060e151bf7959bb05dd8",
+        "android_client_info": {
+          "package_name": "com.example.premierleaguepredictions"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "239339224841-neneqj0o6nlvllrqdibur01la55jo50l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.premierleaguepredictions",
+            "certificate_hash": "05d685f45280df032b72b1ae1e774210f7b8b91c"
+          }
+        },
+        {
+          "client_id": "239339224841-sse2q0vsimsg3q6ks0nvi42si6j3nl3v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAD6BD8sy_44XWN7ieNOBgh6VcFNrQva7U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "239339224841-sse2q0vsimsg3q6ks0nvi42si6j3nl3v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/relativelayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.CommentsFragment"
+    android:padding="5dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/edAddComment"
+        android:paddingBottom="5dp"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <EditText
+        android:id="@+id/edAddComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:hint="@string/addComment"
+        android:padding="10dp"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@id/btnPost"
+        android:inputType="textMultiLine">
+    </EditText>
+
+    <Button
+        android:id="@+id/btnPost"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:text="@string/btnPost"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/buttompost"
+        android:textColor="@color/colorWhite">
+    </Button>
+
+</RelativeLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/trash"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginBottom="40dp"
+        android:visibility="invisible"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

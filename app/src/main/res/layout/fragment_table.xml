@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.TableFragment">
+    <RelativeLayout
+        android:id="@+id/descriptionlayout"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginStart="45dp">
+
+        <TextView
+            android:id="@+id/tvClubName"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:text="Club name"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="25dp"
+            android:textSize="15sp"
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/playedMatches"
+            android:layout_toEndOf="@+id/tvClubName"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="P"
+            android:layout_marginTop="4dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/wonMatches"
+            android:layout_toEndOf="@+id/playedMatches"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="W"
+            android:layout_marginTop="4dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            >
+        </TextView>
+
+        <TextView
+            android:id="@+id/drawMatches"
+            android:layout_toEndOf="@+id/wonMatches"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="D"
+            android:layout_marginTop="4dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/lostMatches"
+            android:layout_toEndOf="@+id/drawMatches"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="L"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="5dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/goalDifference"
+            android:layout_toEndOf="@+id/lostMatches"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="GD"
+            android:layout_marginTop="4dp"
+            android:textSize="15sp"
+            android:layout_marginEnd="5dp"
+            android:gravity="center"
+            >
+        </TextView>
+        <TextView
+            android:id="@+id/points"
+            android:layout_toEndOf="@+id/goalDifference"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:text="PTS"
+            android:layout_marginTop="4dp"
+            android:textSize="15sp"
+            android:gravity="center"
+            >
+        </TextView>
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/ClubRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/descriptionlayout"
+        android:paddingBottom="5dp"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

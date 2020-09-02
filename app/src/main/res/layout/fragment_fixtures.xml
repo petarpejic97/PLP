@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context=".Fragments.FixturesFragment"
+    android:id="@+id/coordinator">
+
+        <ImageView
+            android:id="@+id/pozadina"
+            android:layout_gravity="center"
+            android:layout_width="500dp"
+            android:layout_height="500dp"
+            android:layout_marginStart="200dp"
+            android:background="@drawable/pllogo"
+            android:alpha="0.4"
+            android:rotation="20"
+            android:contentDescription="@string/imgDescription" />
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fixturesRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/btnBestValue"
+                android:paddingBottom="5dp"
+                >
+            </androidx.recyclerview.widget.RecyclerView>
+            <Button
+                android:id="@+id/btnBestValue"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/colorWhite"
+                android:text="@string/btnBstValue">
+            </Button>
+        </RelativeLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabUpdateBestValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center_vertical"
+        android:src="@drawable/value"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginBottom="90dp"
+        android:visibility="invisible"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabRemove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:src="@drawable/trash"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_marginBottom="100dp"
+            android:visibility="invisible"/>
+        <Button
+            android:id="@+id/btnAddMatch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnAddmatch"
+            android:layout_marginBottom="40dp"
+            android:textColor="@color/colorWhite"
+            android:layout_gravity="bottom|end"
+            android:background="@color/colorPrimary"
+            android:visibility="invisible"
+            >
+        </Button>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
